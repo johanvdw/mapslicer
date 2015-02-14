@@ -1,6 +1,24 @@
 import os, sys
 from mapslicer import version
 
+setup_args = dict(name='MapSlicer',
+      version=version.replace(' ','.'),
+      description = "MapTiler - Map Tile Generator for Mashups",
+      long_description= "MapTiler is a powerful tool for online map publishing and generation of map overlay mashups. Your geodata are transformed to the tiles compatible with Google Maps and Earth - ready for uploading to your webserver.",
+      url='http://www.maptiler.org/',
+      author='Klokan Petr Pridal',
+      author_email='klokan@klokan.cz',
+      packages=['mapslicer'],
+      scripts=['mapslicer.py'],
+      data_files=[
+      ],
+
+)
+
+if sys.platform in ['linux2']:
+        from setuptools import setup
+	setup (**setup_args)
+      
 # py2exe - needs OSGeo4W with GDAL 1.6
 if sys.platform in ['win32','win64']:
 	from distutils.core import setup
