@@ -1,0 +1,23 @@
+Source: mapslicer
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders:  Johan Van de Wauw <johan.vandewauw@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-setuptools,
+               python-all
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-grass/mapslicer.git
+Vcs-Git: git://anonscm.debian.org/pkg-grass/mapslicer.git
+Homepage: https://github.com/kalxas/mapslicer 
+X-Python-Version: >= 2.5
+
+Package: python-mapslicer
+Architecture: all
+Depends: ${python:Depends},
+         ${misc:Depends}
+Description: Map Tile Generator for Mashups.
+ MapSlicer is a powerful tool for online map publishing and generation of map
+ overlay mashups. Your geodata are transformed to the tiles compatible with
+ Google Maps and Earth - ready for uploading to your webserver.
