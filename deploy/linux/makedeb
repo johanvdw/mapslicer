@@ -12,7 +12,7 @@ FILES="mapslicer.py mapslicer README.txt deploy/linux/mapslicer.desktop \
        resources/icon.png"
 
 # get mapslicer version
-VERSION=`$PYTHON -c 'import mapslicer; print mapslicer.version.replace(" ",".")'`
+VERSION="1.0~rc1"
 
 # name the archive and directory according to debian policy
 ARCHNAME="MapSlicer-$VERSION"
