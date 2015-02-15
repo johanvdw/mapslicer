@@ -1,5 +1,5 @@
 import os, sys
-from mapslicer import version
+version = "1.0rc1"
 
 setup_args = dict(name='MapSlicer',
       version=version.replace(' ','.'),
